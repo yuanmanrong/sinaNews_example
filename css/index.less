@@ -1,0 +1,225 @@
+@import "reset";
+@import "common";
+@import "font";
+@import "swiper";
+
+.html{
+  font-size: 100px;
+}
+body,html{
+}
+.mainBox{
+  max-width: 640px;
+  margin: 0 auto;
+  background: #f4f4f4;
+
+  .headerBox{
+    padding: 0 .2rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: @blue;
+    overflow: hidden;
+
+     h1{
+       float: left;
+       font-size: 0rem;
+        i{
+          font-size: .8rem;
+          color: #FFFFFF;
+        }
+     }
+    a{
+      float: right;
+      width: .44rem;
+      height: 100%;
+      margin-left: .32rem;
+
+      &.weather{
+        background: url('../img/cloud.gif') no-repeat center center;
+        background-size: 100% ;
+      }
+      &.person{
+        font-size: .44rem;
+        color: #FFFFFF;
+      }
+      &.navMenu{
+        font-size: .44rem;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .navBox{
+    display: none;
+    padding: .16rem;
+    height:1.28rem;
+
+     a{
+       float: left;
+       width: unit(100/6,%);
+       height: .64rem;
+       line-height: .64rem;
+       text-align: center;
+       font-size: .32rem;
+       color:@text;
+     }
+
+  }
+
+  .bannerBox{
+    position: relative;
+    height: 3.4rem;
+    overflow: hidden;
+    .swiper-slide{
+      position: relative;
+      height: 100%;
+
+      img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      p{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: .6rem;
+        line-height: .6rem;
+        background: rgba(0,0,0,.5);
+        font-size: .28rem;
+        color: #FFFFFF;
+        text-indent: .2rem;
+        .text-clip
+      }
+    }
+    .swiper-pagination{
+      z-index: 10;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      width: 1rem;
+      height: .6rem;
+      line-height: .6rem;
+      text-align: center;
+      font-size: .28rem;
+      color: #FFFFFF;
+         .swiper-pagination-current{
+           font-weight: bold;
+         }
+    }
+  }
+
+  .messageBox{
+    display: none;
+    position: relative;
+    height: .8rem;
+    margin: .16rem;
+    background: #FFF;
+     .liveFlag{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 1rem;
+       height: .8rem;
+       &:before{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: .74rem;
+         height: .4rem;
+         margin-left: -.37rem;
+         margin-top: -.2rem;
+         text-align: center;
+         line-height: .4rem;
+         color: #FFFFFF;
+         font-size: .3rem;
+         background: crimson;
+         content: '直播';
+       }
+     }
+    .swiper-container{
+      margin-left: 1rem;
+      height: .8rem;
+      overflow: hidden;
+        .swiper-slide{
+          height: .8rem;
+          line-height: .8rem;
+          a{
+            display: block;
+            .text-clip;
+            color: @text;
+            font-size: .28rem;
+          }
+        }
+    }
+  }
+
+  .newsBox{
+      display: none;
+      width: 100%;
+      background: #FFFFFF;
+
+       .newsitem{
+         position: relative;
+          height: 1rem;
+          padding: .1rem;
+          border-bottom:solid .01rem #cacaca;
+           &.imgBox{
+            height: 1.5rem;
+             h3{
+               font-size: .26rem;
+               margin-top:.1rem ;
+               color: @text;
+             }
+             div{
+               margin: 0 auto;
+               .pic{
+                 position: static;
+                 margin-top:.35rem;
+                 width: unit(1/4*100,%);
+                 height: 1rem;
+                 line-height: 1rem;
+               }
+             }
+
+            }
+             .pic{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 1.5rem;
+                height: 1rem;
+               line-height: .8rem;
+               margin: .1rem;
+             }
+             h3{
+               position: absolute;
+               left:1.7rem ;
+               top: 0;
+               font-size: .26rem;
+               margin-top:.1rem ;
+               color: @text;
+               letter-spacing: .03rem;
+               font-weight: normal;
+               word-break:break-all;
+               word-wrap:break-word;
+             }
+             span{
+               position: absolute;
+               bottom: .12rem;
+               right: .4rem;
+               font-size: .14rem;
+             }
+            i{
+               position: absolute;
+               bottom: .1rem;
+               right: .1rem;
+             }
+
+       }
+
+
+  }
+}

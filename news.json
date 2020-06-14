@@ -1,0 +1,52 @@
+[
+  {
+    "news": [
+      {
+        "id": 1,
+        "title": "快乐西猫猫",
+        "src": "img/news.jpg",
+        "comment": "20万",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "title": "快乐西猫猫",
+        "src": "img/news.jpg",
+        "comment": "20万",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "title": "快乐西猫猫",
+        "src": "img/news.jpg",
+        "comment": "20万",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "title": "快乐西猫猫",
+        "src": "img/news.jpg",
+        "comment": "20万",
+        "link": "#"
+      },
+      {
+        "id": 5,
+        "title": "快乐西猫猫",
+        "src": "img/news.jpg",
+        "comment": "20万",
+        "link": "#"
+      },
+      {
+        "id": 6,
+        "title": "快乐西猫猫",
+        "imgList": [
+          "img/news.jpg",
+          "img/osh.jpg",
+          "img/news.jpg"
+        ],
+        "comment": "20万",
+        "link": "#"
+      }
+    ]
+  }
+]
